@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNISGU - Universitas Technopreneur Virtual Global</title>
+
+    <meta name="description" content="UNISGU adalah universitas virtual global pertama yang mengintegrasikan teknologi informatika dengan kewirausahaan untuk mencetak generasi pemimpin teknologi masa depan, dari mana saja di dunia." />
+    <meta name="author" content="UNISGU" />
+
+    <meta property="og:title" content="UNISGU - Universitas Technopreneur Virtual Global" />
+    <meta property="og:description" content="UNISGU adalah universitas virtual global yang mengintegrasikan teknologi informatika dengan kewirausahaan untuk mencetak generasi pemimpin teknologi masa depan." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1588196749597-9ff075a6b24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+    <meta property="og:image:alt" content="UNISGU - Kolaborasi Mahasiswa di Kampus Virtual Global" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UNISGU - Universitas Technopreneur Virtual Global" />
+    <meta name="twitter:description" content="UNISGU adalah universitas virtual global yang mengintegrasikan teknologi informatika dengan kewirausahaan untuk mencetak generasi pemimpin teknologi masa depan." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1588196749597-9ff075a6b24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+
+    <link rel="canonical" href="https://unisgu.ac.id" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style.css">
+
+     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Universitas Insan Technopreneur (UNISGU)",
+      "url": "https://unisgu.ac.id",
+      "description": "UNISGU adalah universitas virtual global yang mengintegrasikan teknologi informatika dengan kewirausahaan untuk mencetak generasi pemimpin teknologi masa depan.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "(021) 123-4567",
+        "email": "info@unisgu.ac.id",
+        "contactType": "customer support"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-white text-slate-800 font-sans">
+    <div id="app">
+      <!-- Header -->
+      <header class="bg-primary-navy fixed top-0 left-0 right-0 z-50 shadow-lg transition-all duration-300" id="header">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-20">
+            <div class="flex-shrink-0">
+              <a href="#home" class="flex flex-col group">
+                <span class="font-display text-3xl font-extrabold text-white leading-none group-hover:text-accent-orange transition-colors duration-300">UNISGU</span>
+                <span class="text-xs text-accent-orange font-medium -mt-1 opacity-90">Global Virtual University</span>
+              </a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8">
+              <ul class="flex items-center space-x-8">
+                <li><a href="#home" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Beranda</a></li>
+                <li><a href="#about" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Tentang UNISGU</a></li>
+                <li><a href="#academic" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Akademik</a></li>
+                <li><a href="#admission" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Penerimaan</a></li>
+                <li><a href="#ecosystem" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Ekosistem Virtual</a></li>
+                <li><a href="#contact" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Kontak</a></li>
+              </ul>
+              <button class="cta-button bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Daftar Sekarang</button>
+            </div>
+            
+            <div class="md:hidden flex items-center">
+              <button id="mobileToggle" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-accent-orange focus:outline-none">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" id="menu-open-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+                <svg class="h-6 w-6 hidden" id="menu-close-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="navMenu" class="md:hidden hidden bg-primary-navy/95 backdrop-blur-sm border-t border-slate-700">
+          <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <li><a href="#home" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beranda</a></li>
+            <li><a href="#about" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tentang UNISGU</a></li>
+            <li><a href="#academic" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Akademik</a></li>
+            <li><a href="#admission" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Penerimaan</a></li>
+            <li><a href="#ecosystem" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ekosistem Virtual</a></li>
+            <li><a href="#contact" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Kontak</a></li>
+          </ul>
+          <div class="p-4">
+            <button class="cta-button w-full bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Daftar Sekarang</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Home Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center text-white text-center overflow-hidden">
+          <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-navy/90 via-slate-900/80 to-accent-orange/20 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1588196749597-9ff075a6b24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Kolaborasi dalam ekosistem virtual global" class="hero-image absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="font-display text-4xl md:text-6xl font-extrabold mb-6 text-white text-shadow-lg leading-tight">Melahirkan Technopreneur Global, Bukan Sekadar Programmer</h1>
+            <p class="text-lg md:text-xl max-w-4xl mx-auto mb-8 text-slate-100 leading-relaxed">Kami mendobrak batasan geografis. Bergabunglah dengan ekosistem virtual global kami di mana Ilmu Informatika dan kewirausahaan bertemu untuk membentuk Anda menjadi pencipta solusi digital masa depan, dari mana saja di dunia.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+              <button class="cta-primary w-full sm:w-auto bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-4 px-8 rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-lg">Daftar Sekarang</button>
+              <button class="cta-secondary w-full sm:w-auto bg-transparent border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-primary-navy transition-all duration-300 text-lg">Jelajahi Program</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why Choose UNISGU Section -->
+        <section class="py-20 bg-slate-50">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-800">Pendidikan Tanpa Batas</h2>
+              <p class="text-lg text-slate-600 max-w-3xl mx-auto">Kami mempersiapkan Anda untuk menjadi pemimpin teknologi global dengan platform pembelajaran virtual yang fleksibel dan terhubung.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="feature-card text-center bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-accent-orange to-orange-500 rounded-full mb-6 text-white shadow-lg">
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-slate-800">Kurikulum Global</h3>
+                <p class="text-slate-600 leading-relaxed">Belajar dari Praktisi, Membangun Produk Nyata. Kurikulum kami dirancang bersama para CTO dan pendiri startup terkemuka dari seluruh dunia.</p>
+              </div>
+              <div class="feature-card text-center bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-accent-teal to-teal-500 rounded-full mb-6 text-white shadow-lg">
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-slate-800">Inkubator Virtual</h3>
+                <p class="text-slate-600 leading-relaxed">Akses pendanaan dan mentoring secara remote. Setiap ide brilian berpotensi menjadi startup global di inkubator virtual kami.</p>
+              </div>
+              <div class="feature-card text-center bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full mb-6 text-white shadow-lg">
+                  <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-slate-800">Jaringan Tanpa Batas</h3>
+                <p class="text-slate-600 leading-relaxed">Terhubung dengan ekosistem teknologi global langsung dari layar Anda. Peluang magang remote dan karir di seluruh dunia.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Program Unggulan Section -->
+        <section class="py-20 bg-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-slate-800">Program Studi Unggulan</h2>
+                <p class="text-xl text-slate-600 mb-8 leading-relaxed">Satu program studi, tiga pilar utama: penguasaan teknis mendalam, kecerdasan produk, dan pola pikir wirausaha. Belajar kapan saja, di mana saja, dengan kurikulum yang dirancang untuk kesuksesan di panggung global.</p>
+                <div class="space-y-4 mb-8">
+                  <div class="flex items-start space-x-3">
+                    <div class="w-6 h-6 bg-accent-orange rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <p class="text-slate-700"><strong>Kedalaman Teknis:</strong> Penguasaan teknologi terdepan dan metodologi pengembangan software.</p>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <div class="w-6 h-6 bg-accent-orange rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <p class="text-slate-700"><strong>Kecerdasan Produk:</strong> Pemahaman mendalam tentang user experience dan product management.</p>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <div class="w-6 h-6 bg-accent-orange rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <p class="text-slate-700"><strong>Pola Pikir Wirausaha:</strong> Kemampuan mengidentifikasi peluang dan mengembangkan solusi bisnis.</p>
+                  </div>
+                </div>
+                <button class="bg-primary-navy text-white font-semibold py-3 px-8 rounded-lg hover:bg-slate-800 transition-colors duration-300">Lihat Detail Kurikulum</button>
+              </div>
+              <div class="relative">
+                <img src="https://images.unsplash.com/photo-1550751827-41378cb4f4d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Infrastruktur Digital Global" class="rounded-2xl shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-slate-200">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-accent-orange rounded-full flex items-center justify-center">
+                      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                      <p class="font-bold text-slate-800">100%</p>
+                      <p class="text-sm text-slate-600">Remote Job Placement</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="py-20 bg-slate-50">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-800">Kata Komunitas Global Kami</h2>
+              <p class="text-lg text-slate-600 max-w-3xl mx-auto">Dengar langsung pengalaman mahasiswa dari berbagai belahan dunia yang telah merasakan transformasi di UNISGU.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
+                <div class="flex items-center mb-4">
+                  <img src="https://images.unsplash.com/photo-1494790108755-2616b612b647?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Sarah Putri" class="w-12 h-12 rounded-full mr-4">
+                  <div>
+                    <h4 class="font-bold text-slate-800">Sarah Putri</h4>
+                    <p class="text-sm text-slate-600">Angkatan 2024 (Jakarta, ID)</p>
+                  </div>
+                </div>
+                <p class="text-slate-700 leading-relaxed">"Di UNISGU, saya tidak hanya belajar coding. Saya belajar bagaimana mengubah kode tersebut menjadi bisnis yang berdampak. Pengalaman di inkubator sangat mengubah hidup saya."</p>
+              </div>
+              <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
+                <div class="flex items-center mb-4">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Ahmad Rahman" class="w-12 h-12 rounded-full mr-4">
+                  <div>
+                    <h4 class="font-bold text-slate-800">Ahmad Rahman</h4>
+                    <p class="text-sm text-slate-600">Alumni 2023 (Berlin, DE)</p>
+                  </div>
+                </div>
+                <p class="text-slate-700 leading-relaxed">"Kurikulumnya sangat aplikatif. Sekarang saya bekerja sebagai Tech Lead di startup unicorn dan startup yang saya bangun saat kuliah sudah berkembang pesat."</p>
+              </div>
+              <div class="bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
+                <div class="flex items-center mb-4">
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Maya Sari" class="w-12 h-12 rounded-full mr-4">
+                  <div>
+                    <h4 class="font-bold text-slate-800">Maya Sari</h4>
+                    <p class="text-sm text-slate-600">Angkatan 2025 (Singapura, SG)</p>
+                  </div>
+                </div>
+                <p class="text-slate-700 leading-relaxed">"Mentorship dari praktisi industri global benar-benar membuka wawasan saya. Networking yang didapat dari UNISGU luar biasa valuable untuk karir."</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+              <div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-slate-800">Tentang UNISGU</h2>
+                <p class="text-xl text-slate-600 mb-8 leading-relaxed">UNISGU adalah universitas virtual pertama di Indonesia yang berfokus pada technopreneurship, dirancang untuk menciptakan generasi pemimpin teknologi masa depan yang siap bersaing di panggung global.</p>
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Visi</h3>
+                    <p class="text-slate-700 leading-relaxed">Menjadi universitas technopreneurship virtual rujukan yang melahirkan inovator berdaya saing global.</p>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-3">Misi</h3>
+                    <ul class="space-y-2 text-slate-700">
+                      <li class="flex items-start space-x-2">
+                        <span class="w-2 h-2 bg-accent-orange rounded-full mt-2 flex-shrink-0"></span>
+                        <span>Menyelenggarakan pendidikan berbasis proyek secara online dan fleksibel</span>
+                      </li>
+                      <li class="flex items-start space-x-2">
+                        <span class="w-2 h-2 bg-accent-orange rounded-full mt-2 flex-shrink-0"></span>
+                        <span>Membangun ekosistem inovasi dan inkubasi startup virtual</span>
+                      </li>
+                      <li class="flex items-start space-x-2">
+                        <span class="w-2 h-2 bg-accent-orange rounded-full mt-2 flex-shrink-0"></span>
+                        <span>Mengembangkan karakter entrepreneur digital yang berintegritas</span>
+                      </li>
+                      <li class="flex items-start space-x-2">
+                        <span class="w-2 h-2 bg-accent-orange rounded-full mt-2 flex-shrink-0"></span>
+                        <span>Menciptakan jaringan global tanpa batas dengan industri teknologi</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tim global bekerja secara remote" class="rounded-2xl shadow-2xl">
+              </div>
+            </div>
+            
+            <div class="bg-slate-50 rounded-3xl p-12">
+              <h3 class="text-3xl font-bold text-center mb-8 text-slate-800">Sejarah UNISGU</h3>
+              <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-slate-700 leading-relaxed mb-6">UNISGU didirikan pada tahun 2020 oleh konsorsium praktisi teknologi global yang melihat kebutuhan akan pendidikan tinggi yang fleksibel, relevan, dan tanpa batas geografis. Para pendiri, yang terdiri dari mantan CTO, serial entrepreneur, dan akademisi berpengalaman dari berbagai negara, berkeinginan menciptakan institusi pendidikan yang sepenuhnya virtual untuk menjawab tantangan era digital.</p>
+                <p class="text-lg text-slate-700 leading-relaxed">Filosofi "UNISGU" sendiri merupakan akronim dari nilai-nilai inti institusi: <strong>Universitas</strong> yang berlandaskan Sains & Teknologi, berwawasan <strong>Global</strong>, dan menjiwai semangat <strong>Usaha</strong> (Technopreneurship). Setiap elemen dalam nama ini mencerminkan komitmen kami untuk menghasilkan lulusan yang tidak hanya kompeten secara teknis, tetapi juga memiliki visi bisnis dan perspektif global, belajar dari mana saja mereka berada.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Academic Section -->
+        <section id="academic" class="py-20 bg-slate-50">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-800">Program Studi Informatika Technopreneur</h2>
+              <p class="text-lg text-slate-600 max-w-4xl mx-auto">Program unik yang mengintegrasikan kedalaman teknis informatika dengan pemahaman bisnis dan kewirausahaan untuk menciptakan technopreneur masa depan.</p>
+            </div>
+
+            <!-- Kurikulum Timeline -->
+            <div class="mb-20">
+              <h3 class="text-3xl font-bold text-center mb-12 text-slate-800">Kurikulum & Roadmap Pembelajaran</h3>
+              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                  <div class="text-blue-500 font-bold text-sm mb-2">SEMESTER 1-2</div>
+                  <h4 class="text-xl font-bold mb-3 text-slate-800">Fondasi</h4>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>• Algoritma & Struktur Data</li>
+                    <li>• Pemrograman Dasar</li>
+                    <li>• Matematika Diskrit</li>
+                    <li>• Dasar Kewirausahaan</li>
+                    <li>• Design Thinking</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent-teal">
+                  <div class="text-accent-teal font-bold text-sm mb-2">SEMESTER 3-4</div>
+                  <h4 class="text-xl font-bold mb-3 text-slate-800">Pengembangan Produk</h4>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>• UI/UX Design</li>
+                    <li>• Software Engineering</li>
+                    <li>• Database Systems</li>
+                    <li>• Product Management</li>
+                    <li>• Digital Marketing</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent-orange">
+                  <div class="text-accent-orange font-bold text-sm mb-2">SEMESTER 5-6</div>
+                  <h4 class="text-xl font-bold mb-3 text-slate-800">Spesialisasi</h4>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>• AI for Business</li>
+                    <li>• Cloud Computing</li>
+                    <li>• Cybersecurity</li>
+                    <li>• DevOps</li>
+                    <li>• Business Intelligence</li>
+                  </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+                  <div class="text-purple-500 font-bold text-sm mb-2">SEMESTER 7-8</div>
+                  <h4 class="text-xl font-bold mb-3 text-slate-800">Inkubasi</h4>
+                  <ul class="text-sm text-slate-600 space-y-1">
+                    <li>• Capstone Project</li>
+                    <li>• Startup Incubation</li>
+                    <li>• Industry Partnership</li>
+                    <li>• Thesis/Business Plan</li>
+                    <li>• Investment Readiness</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profil Dosen -->
+            <div class="mb-20">
+              <h3 class="text-3xl font-bold text-center mb-12 text-slate-800">Fakultas & Mentor Global</h3>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                  <img src="https://images.unsplash.com/photo-1494790108755-2616b612b647?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Dr. Anisa Rahman" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                  <h4 class="text-xl font-bold text-slate-800 mb-2">Dr. Anisa Rahman, Ph.D.</h4>
+                  <p class="text-accent-orange font-semibold mb-2">Head of AI Research (Jakarta)</p>
+                  <p class="text-sm text-slate-600">Mantan Principal Engineer di Gojek, spesialis Machine Learning dengan 15+ tahun pengalaman.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Prof. Budi Santoso" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                  <h4 class="text-xl font-bold text-slate-800 mb-2">Prof. Budi Santoso, M.Sc.</h4>
+                  <p class="text-accent-orange font-semibold mb-2">Director of Entrepreneurship (Singapura)</p>
+                  <p class="text-sm text-slate-600">Serial entrepreneur, pendiri 3 startup unicorn di Asia Tenggara. Mentor lebih dari 100 startup.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Dr. Maya Sinta" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                  <h4 class="text-xl font-bold text-slate-800 mb-2">Dr. Maya Sinta, Ph.D.</h4>
+                  <p class="text-accent-orange font-semibold mb-2">Lead Product Strategist (San Francisco)</p>
+                  <p class="text-sm text-slate-600">Mantan VP Product di Shopee, expert dalam digital product strategy dan user experience design.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Admission Section -->
+        <section id="admission" class="py-20 bg-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-800">Bergabung dengan Komunitas Global Kami</h2>
+              <p class="text-lg text-slate-600 max-w-3xl mx-auto">Proses pendaftaran 100% online yang transparan untuk menemukan calon technopreneur terbaik dari seluruh dunia.</p>
+            </div>
+
+            <!-- Proses Pendaftaran -->
+            <div class="mb-20">
+              <h3 class="text-3xl font-bold text-center mb-12 text-slate-800">Proses Pendaftaran</h3>
+              <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                  <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-slate-300"></div>
+                  <div class="space-y-8">
+                    <div class="relative flex items-start">
+                      <div class="w-8 h-8 bg-accent-orange rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
+                      <div class="ml-6">
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">Pendaftaran Online</h4>
+                        <p class="text-slate-600">Daftar melalui portal online dengan melengkapi data pribadi, riwayat pendidikan, dan essay motivasi.</p>
+                      </div>
+                    </div>
+                    <div class="relative flex items-start">
+                      <div class="w-8 h-8 bg-accent-orange rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
+                      <div class="ml-6">
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">Tes Potensi & Logika (Online)</h4>
+                        <p class="text-slate-600">Ujian yang mengukur kemampuan analitis, logika pemrograman, dan pemahaman konsep teknologi dasar.</p>
+                      </div>
+                    </div>
+                    <div class="relative flex items-start">
+                      <div class="w-8 h-8 bg-accent-orange rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
+                      <div class="ml-6">
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">Wawancara Visi (Online)</h4>
+                        <p class="text-slate-600">Sesi wawancara dengan panel dosen dan praktisi industri untuk menilai visi, motivasi, dan potensi kepemimpinan.</p>
+                      </div>
+                    </div>
+                    <div class="relative flex items-start">
+                      <div class="w-8 h-8 bg-accent-orange rounded-full flex items-center justify-center text-white font-bold text-sm">4</div>
+                      <div class="ml-6">
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">Pengumuman & Registrasi Online</h4>
+                        <p class="text-slate-600">Pengumuman hasil seleksi dan proses registrasi untuk calon mahasiswa yang diterima.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Biaya & Beasiswa -->
+            <div class="grid lg:grid-cols-2 gap-16 mb-20">
+              <div>
+                <h3 class="text-3xl font-bold mb-6 text-slate-800">Investasi Pendidikan</h3>
+                <div class="bg-slate-50 p-8 rounded-xl">
+                  <table class="w-full">
+                    <thead>
+                      <tr class="border-b border-slate-300">
+                        <th class="text-left py-3 text-slate-800 font-semibold">Komponen</th>
+                        <th class="text-right py-3 text-slate-800 font-semibold">Biaya</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-slate-600">
+                      <tr class="border-b border-slate-200">
+                        <td class="py-3">Uang Pangkal</td>
+                        <td class="text-right py-3">Rp 25.000.000</td>
+                      </tr>
+                      <tr class="border-b border-slate-200">
+                        <td class="py-3">SPP per Semester</td>
+                        <td class="text-right py-3">Rp 12.500.000</td>
+                      </tr>
+                      <tr class="border-b border-slate-200">
+                        <td class="py-3">Digital Platform Fee</td>
+                        <td class="text-right py-3">Rp 2.500.000</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 font-semibold text-slate-800">Total per Semester</td>
+                        <td class="text-right py-3 font-semibold text-slate-800">Rp 15.000.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold mb-6 text-slate-800">Program Beasiswa</h3>
+                <div class="space-y-4">
+                  <div class="bg-gradient-to-r from-accent-orange to-orange-500 p-6 rounded-xl text-white">
+                    <h4 class="text-xl font-bold mb-2">Beasiswa Prestasi Inovator</h4>
+                    <p class="mb-2">Untuk mahasiswa dengan portofolio proyek teknologi outstanding</p>
+                    <p class="font-semibold">Cakupan: 50-100% biaya kuliah</p>
+                  </div>
+                  <div class="bg-gradient-to-r from-accent-teal to-teal-500 p-6 rounded-xl text-white">
+                    <h4 class="text-xl font-bold mb-2">Beasiswa Bantuan Finansial</h4>
+                    <p class="mb-2">Untuk mahasiswa berprestasi dengan keterbatasan ekonomi</p>
+                    <p class="font-semibold">Cakupan: 30-70% biaya kuliah</p>
+                  </div>
+                  <div class="bg-gradient-to-r from-blue-500 to-indigo-500 p-6 rounded-xl text-white">
+                    <h4 class="text-xl font-bold mb-2">Beasiswa Startup Founder</h4>
+                    <p class="mb-2">Untuk founder startup yang ingin memperdalam knowledge</p>
+                    <p class="font-semibold">Cakupan: Fleksibel sesuai valuasi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ -->
+            <div>
+              <h3 class="text-3xl font-bold text-center mb-12 text-slate-800">Frequently Asked Questions</h3>
+              <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item bg-white border border-slate-200 rounded-xl">
+                  <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-800">Apakah perkuliahan 100% online?</span>
+                    <svg class="faq-toggle w-5 h-5 text-slate-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                    </svg>
+                  </button>
+                  <div class="faq-answer px-6 text-slate-600">
+                    <p>Benar. Seluruh proses belajar mengajar, mentoring, dan inkubasi dilakukan secara virtual, memungkinkan Anda belajar dari mana saja di dunia dengan jadwal yang fleksibel.</p>
+                  </div>
+                </div>
+                <div class="faq-item bg-white border border-slate-200 rounded-xl">
+                  <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-800">Apakah ada program magang di UNISGU?</span>
+                    <svg class="faq-toggle w-5 h-5 text-slate-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                    </svg>
+                  </button>
+                  <div class="faq-answer px-6 text-slate-600">
+                    <p>Ya, program magang wajib dilakukan di semester 6-7. Kami memiliki partner perusahaan teknologi global yang menawarkan posisi magang remote.</p>
+                  </div>
+                </div>
+                <div class="faq-item bg-white border border-slate-200 rounded-xl">
+                  <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                    <span class="font-semibold text-slate-800">Bagaimana prospek karir lulusan UNISGU?</span>
+                    <svg class="faq-toggle w-5 h-5 text-slate-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                    </svg>
+                  </button>
+                  <div class="faq-answer px-6 text-slate-600">
+                    <p>Lulusan kami siap untuk berkarir di panggung global sebagai Tech Lead, Product Manager, atau Entrepreneur. Jaringan global kami membuka pintu ke perusahaan teknologi terbaik di dunia.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Campus Life Section -->
+        <section id="ecosystem" class="py-20 bg-slate-50">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-800">Ekosistem Virtual UNISGU</h2>
+              <p class="text-lg text-slate-600 max-w-3xl mx-auto">Platform digital yang dirancang untuk mendorong inovasi, kolaborasi, dan pengembangan diri secara holistik, tanpa batas ruang dan waktu.</p>
+            </div>
+
+            <!-- Fasilitas Kampus -->
+            <div class="mb-20">
+              <h3 class="text-3xl font-bold text-center mb-12 text-slate-800">Fasilitas Digital World-Class</h3>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <img src="https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Platform Kolaborasi" class="w-full h-48 object-cover">
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Platform Kolaborasi</h4>
+                    <p class="text-slate-600">Akses ke Slack, Miro, dan Figma untuk diskusi real-time, brainstorming, dan kerja tim yang seamless.</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <img src="https://images.unsplash.com/photo-1593432336836-3b156a55de16?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cloud Sandbox" class="w-full h-48 object-cover">
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Cloud Computing Sandbox</h4>
+                    <p class="text-slate-600">Akses kredit ke AWS, GCP, dan Azure untuk membangun dan mendeploy aplikasi skala enterprise.</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Virtual Cyber Range" class="w-full h-48 object-cover">
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Virtual Cyber Range</h4>
+                    <p class="text-slate-600">Fasilitas ethical hacking dan penetration testing dengan sandbox environment untuk praktik keamanan siber.</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <img src="https://images.unsplash.com/photo-1621243878931-b6a246535499?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Digital Prototyping Suite" class="w-full h-48 object-cover">
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Digital Prototyping Suite</h4>
+                    <p class="text-slate-600">Akses ke software CAD, simulator, dan alat prototyping digital untuk mewujudkan ide inovatif.</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Digital Library" class="w-full h-48 object-cover">
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Digital Library</h4>
+                    <p class="text-slate-600">Perpustakaan digital dengan akses ke jurnal internasional, e-book, dan platform learning terkini.</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Virtual Incubation Hub" class="w-full h-48 object-cover">
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">Virtual Incubation Hub</h4>
+                    <p class="text-slate-600">Platform untuk pitching, mentoring, dan networking dengan Venture Capital global.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unit Kegiatan Mahasiswa -->
+            <div>
+              <h3 class="text-3xl font-bold text-center mb-12 text-slate-800">Komunitas & Chapter Global</h3>
+              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-xl text-white text-center hover:scale-105 transition-transform duration-300">
+                  <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  </div>
+                  <h4 class="text-lg font-bold mb-2">Coding Club</h4>
+                  <p class="text-sm opacity-90">Competitive programming, hackathon, dan coding bootcamp</p>
+                </div>
+                <div class="bg-gradient-to-br from-accent-orange to-orange-600 p-6 rounded-xl text-white text-center hover:scale-105 transition-transform duration-300">
+                  <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </div>
+                  <h4 class="text-lg font-bold mb-2">Startup Club</h4>
+                  <p class="text-sm opacity-90">Inkubasi ide bisnis, pitch competition, dan networking</p>
+                </div>
+                <div class="bg-gradient-to-br from-accent-teal to-teal-600 p-6 rounded-xl text-white text-center hover:scale-105 transition-transform duration-300">
+                  <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  </div>
+                  <h4 class="text-lg font-bold mb-2">UI/UX Enthusiast</h4>
+                  <p class="text-sm opacity-90">Design thinking workshop, prototype testing, user research</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-500 to-purple-600 p-6 rounded-xl text-white text-center hover:scale-105 transition-transform duration-300">
+                  <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M21 6H3v12h18V6zm-10 7.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"/></svg>
+                  </div>
+                  <h4 class="text-lg font-bold mb-2">E-Sports Community</h4>
+                  <p class="text-sm opacity-90">Gaming tournament, streamer development, game development</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-800">Terhubung dengan Kami</h2>
+              <p class="text-lg text-slate-600 max-w-3xl mx-auto">Punya pertanyaan? Tim global kami siap membantu Anda memulai perjalanan menjadi technopreneur, di mana pun Anda berada.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+              <!-- Contact Form -->
+              <div>
+                <h3 class="text-2xl font-bold mb-6 text-slate-800">Kirim Pesan</h3>
+                <form id="contactForm" class="space-y-6">
+                  <div>
+                    <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors">
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors">
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors">
+                  </div>
+                  <div>
+                    <label for="subject" class="block text-sm font-medium text-slate-700 mb-2">Subjek</label>
+                    <select id="subject" name="subject" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors">
+                      <option value="">Pilih Subjek</option>
+                      <option value="admission">Informasi Pendaftaran</option>
+                      <option value="scholarship">Beasiswa</option>
+                      <option value="curriculum">Kurikulum & Program</option>
+                      <option value="campus-visit">Sesi Info Virtual</option>
+                      <option value="other">Lainnya</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Pesan</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors resize-none"></textarea>
+                  </div>
+                  <button type="submit" class="w-full bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+                    <span class="button-text">Kirim Pesan</span>
+                    <span class="button-loading hidden">Mengirim...</span>
+                  </button>
+                </form>
+              </div>
+
+              <!-- Contact Information -->
+              <div>
+                <h3 class="text-2xl font-bold mb-6 text-slate-800">Informasi Kontak</h3>
+                <div class="space-y-6 mb-8">
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-accent-teal rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-slate-800">Telepon</h4>
+                      <p class="text-slate-600">(021) 123-4567</p>
+                      <p class="text-slate-600">WhatsApp: +62 812-3456-7890</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-slate-800">Email</h4>
+                      <p class="text-slate-600">info@unisgu.ac.id</p>
+                      <p class="text-slate-600">admissions@unisgu.ac.id</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Virtual Info Session -->
+                <div class="bg-slate-100 rounded-xl p-8 text-center">
+                  <svg class="w-16 h-16 text-slate-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                  </svg>
+                  <h4 class="font-semibold text-slate-800 mb-2">Sesi Info Virtual</h4>
+                  <p class="text-slate-600 mb-4">Jadwalkan sesi konsultasi one-on-one dengan tim admisi kami.</p>
+                  <button class="bg-primary-navy text-white px-6 py-2 rounded-lg hover:bg-slate-800 transition-colors">Jadwalkan Sesi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="py-20 bg-gradient-to-br from-primary-navy via-slate-900 to-accent-orange/20 text-white">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Siap Membangun Masa Depan Teknologi Global?</h2>
+            <p class="text-xl text-slate-200 mb-8 max-w-3xl mx-auto leading-relaxed">Jadilah bagian dari generasi inovator yang akan memimpin transformasi digital global. Proses pendaftaran kami sederhana dan 100% online.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button class="cta-primary w-full sm:w-auto bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-4 px-8 rounded-lg shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 text-lg">Daftar Sekarang</button>
+              <button class="w-full sm:w-auto bg-transparent border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-primary-navy transition-all duration-300 text-lg">Download Brosur</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-primary-navy text-slate-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Footer Column 1 -->
+            <div class="space-y-4">
+              <a href="#home" class="flex flex-col">
+                <span class="font-display text-3xl font-extrabold text-white leading-none">UNISGU</span>
+                <span class="text-xs text-accent-orange font-medium -mt-1">Global Virtual University</span>
+              </a>
+              <p class="text-slate-400 leading-relaxed">UNISGU: Mencetak Generasi Pemimpin Teknologi yang Inovatif dan Berjiwa Wirausaha.</p>
+              <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-accent-orange transition-colors duration-300">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="#" class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-accent-orange transition-colors duration-300">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+                </a>
+                <a href="#" class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-accent-orange transition-colors duration-300">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+              </div>
+            </div>
+            <!-- Footer Column 2 -->
+            <div>
+              <h4 class="font-bold text-white text-lg mb-4">Navigasi Cepat</h4>
+              <ul class="space-y-2">
+                <li><a href="#home" class="hover:text-accent-orange transition-colors">Beranda</a></li>
+                <li><a href="#about" class="hover:text-accent-orange transition-colors">Tentang UNISGU</a></li>
+                <li><a href="#academic" class="hover:text-accent-orange transition-colors">Akademik</a></li>
+                <li><a href="#admission" class="hover:text-accent-orange transition-colors">Penerimaan</a></li>
+                <li><a href="#ecosystem" class="hover:text-accent-orange transition-colors">Ekosistem Virtual</a></li>
+                <li><a href="#contact" class="hover:text-accent-orange transition-colors">Kontak</a></li>
+              </ul>
+            </div>
+            <!-- Footer Column 3 -->
+            <div>
+              <h4 class="font-bold text-white text-lg mb-4">Kontak</h4>
+              <div class="space-y-2 text-slate-400">
+                <p>Kantor Pusat Virtual (Global)</p>
+                <p>Email: info@unisgu.ac.id</p>
+                <p>Telepon: (021) 123-4567</p>
+                <p>WhatsApp: +62 812-3456-7890</p>
+              </div>
+            </div>
+            <!-- Footer Column 4 -->
+            <div>
+              <h4 class="font-bold text-white text-lg mb-4">Program</h4>
+              <ul class="space-y-2 text-slate-400">
+                <li>S1 Informatika Technopreneur</li>
+                <li>Bootcamp Coding</li>
+                <li>Executive Program</li>
+                <li>Startup Incubator</li>
+                <li>Corporate Training</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-16 pt-8 border-t border-slate-700 text-center text-slate-400">
+            <p>&copy; 2025 Universitas Insan Technopreneur (UNISGU). All rights reserved. | Privacy Policy | Terms of Service</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

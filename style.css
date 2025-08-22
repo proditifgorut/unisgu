@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-slate-800 bg-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold text-slate-800;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-accent-orange transition-all duration-300;
+  }
+  
+  .nav-link.active {
+    @apply text-accent-orange;
+  }
+  
+  .nav-link.active::after {
+    @apply w-full;
+  }
+  
+  .feature-card {
+    @apply transform transition-all duration-300 hover:scale-105;
+  }
+  
+  .cta-button {
+    @apply transform transition-all duration-300 hover:scale-105;
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  
+  .faq-item.active .faq-answer {
+    @apply pt-4 pb-6;
+    max-height: 200px;
+  }
+
+  .loading-spinner {
+    @apply inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-orange to-accent-teal bg-clip-text text-transparent;
+  }
+}
