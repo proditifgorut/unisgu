@@ -5,16 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeContactForm();
     initializeSmoothScrolling();
     initializeAnimations();
+    initializeDashboardLearningPath();
 });
 
 // Navigation functionality
 function initializeNavigation() {
     const mobileToggle = document.getElementById('mobileToggle');
     const navMenu = document.getElementById('navMenu');
+    const header = document.getElementById('header');
+
+    if (!header) return; // Exit if no header on page
+
     const openIcon = document.getElementById('menu-open-icon');
     const closeIcon = document.getElementById('menu-close-icon');
     const navLinks = document.querySelectorAll('.nav-link');
-    const header = document.getElementById('header');
 
     // Mobile menu toggle
     if (mobileToggle && navMenu) {
@@ -25,27 +29,47 @@ function initializeNavigation() {
         });
     }
 
-    // Active link highlighting based on scroll position
-    const sections = document.querySelectorAll('section[id]');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').substring(1) === entry.target.id) {
-                        link.classList.add('active');
-                    }
-                });
+    // Active link highlighting
+    const currentPath = window.location.pathname.replace(/\/$/, ""); // Remove trailing slash
+
+    if (currentPath.includes('index.html') || currentPath === "") {
+        // For the homepage with scrolling sections
+        const sections = document.querySelectorAll('main section[id]');
+        const observer = new IntersectionObserver((entries) => {
+            let visibleSectionId = '';
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    visibleSectionId = entry.target.id;
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href && href.endsWith(`#${visibleSectionId}`)) {
+                    link.classList.add('active');
+                }
+            });
+
+        }, { rootMargin: "-50% 0px -50% 0px" });
+
+        sections.forEach(section => observer.observe(section));
+    } else {
+         // For static pages, just highlight the link in the nav
+        navLinks.forEach(link => {
+            const linkPath = new URL(link.href).pathname.replace(/\/$/, "");
+            if (linkPath === currentPath) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
             }
         });
-    }, { rootMargin: "-50% 0px -50% 0px" });
-
-    sections.forEach(section => observer.observe(section));
+    }
 
     // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if (!navMenu.classList.contains('hidden')) {
+             if (navMenu && !navMenu.classList.contains('hidden')) {
                 navMenu.classList.add('hidden');
                 openIcon.classList.remove('hidden');
                 closeIcon.classList.add('hidden');
@@ -70,99 +94,121 @@ function initializeFAQ() {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         
-        question.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-            
-            // Close all FAQ items
-            faqItems.forEach(faqItem => {
-                faqItem.classList.remove('active');
+        if (question) {
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other FAQ items for an accordion effect
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle the clicked item
+                if (!isActive) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
             });
-            
-            // Open clicked item if it wasn't active
-            if (!isActive) {
-                item.classList.add('active');
-            }
-        });
+        }
     });
 }
 
 // Contact form functionality
 function initializeContactForm() {
-    const contactForm = document.getElementById('contactForm');
+    const contactForms = document.querySelectorAll('.contact-form');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', async function(e) {
+    contactForms.forEach(form => {
+        form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const submitButton = form.querySelector('button[type="submit"]');
             const buttonText = submitButton.querySelector('.button-text');
             const buttonLoading = submitButton.querySelector('.button-loading');
             
             // Show loading state
-            buttonText.classList.add('hidden');
-            buttonLoading.classList.remove('hidden');
+            if(buttonText && buttonLoading) {
+                buttonText.classList.add('hidden');
+                buttonLoading.classList.remove('hidden');
+            }
             submitButton.disabled = true;
             
             // Simulate form submission (replace with actual API call)
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            await new Promise(resolve => setTimeout(resolve, 1500));
             
             // Show success message
-            alert('Pesan Anda telah berhasil dikirim! Tim kami akan segera menghubungi Anda.');
+            alert('Permintaan Anda telah berhasil dikirim! Tim kami akan segera menghubungi Anda.');
             
             // Reset form
-            contactForm.reset();
+            form.reset();
             
             // Reset button state
-            buttonText.classList.remove('hidden');
-            buttonLoading.classList.add('hidden');
+             if(buttonText && buttonLoading) {
+                buttonText.classList.remove('hidden');
+                buttonLoading.classList.add('hidden');
+            }
             submitButton.disabled = false;
         });
-    }
+    });
 }
 
 // Smooth scrolling for anchor links
 function initializeSmoothScrolling() {
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
-    anchorLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                const headerHeight = document.querySelector('#header').offsetHeight;
-                const targetPosition = targetSection.offsetTop - headerHeight;
-                
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            const targetId = href.substring(href.lastIndexOf('#') + 1);
+            const targetElement = document.getElementById(targetId);
+
+            // Check if the link is on the same page
+            const onSamePage = location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '');
+
+            if (onSamePage && targetElement) {
+                e.preventDefault();
+                const headerOffset = document.getElementById('header') ? document.getElementById('header').offsetHeight : 0;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
                 window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
+                    top: offsetPosition,
+                    behavior: "smooth"
                 });
             }
         });
     });
 }
 
+
 // Animation on scroll
 function initializeAnimations() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-fade-in-up');
-            }
+    if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
         });
-    }, observerOptions);
 
-    // Observe elements that should animate
-    const animateElements = document.querySelectorAll('.feature-card, .bg-white');
-    animateElements.forEach(el => observer.observe(el));
+        animatedElements.forEach(el => {
+            observer.observe(el);
+        });
+    } else {
+        // Fallback for older browsers
+        animatedElements.forEach(el => {
+            el.classList.add('is-visible');
+        });
+    }
 }
+
 
 // Parallax effect for hero section
 window.addEventListener('scroll', function() {
@@ -174,9 +220,18 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Add loading spinner component
-function createLoadingSpinner() {
-    const spinner = document.createElement('div');
-    spinner.className = 'loading-spinner';
-    return spinner;
+// Dashboard specific JS
+function initializeDashboardLearningPath() {
+    const courseLinks = document.querySelectorAll('#course-sidebar ul li');
+    if (!courseLinks.length) return;
+
+    courseLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            courseLinks.forEach(l => l.classList.remove('active-lesson'));
+            link.classList.add('active-lesson');
+            // Here you would typically load the new lesson content
+            alert(`Memuat pelajaran: ${link.textContent.trim()}`);
+        });
+    });
 }

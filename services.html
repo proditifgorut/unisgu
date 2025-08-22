@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan Profesional - Komunitas UNISGU</title>
+    <meta name="description" content="Dukung komunitas open source kami dengan menggunakan layanan profesional dari para kontributor berpengalaman di UNISGU." />
+    <meta name="author" content="UNISGU Open Source Community" />
+    <meta property="og:title" content="Layanan Profesional - Komunitas UNISGU" />
+    <meta property="og:description" content="Dari pengembangan web hingga publikasi ilmiah, dapatkan solusi ahli dari komunitas open source UNISGU." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-white text-slate-800 font-sans">
+    <div id="app">
+        <!-- Header -->
+        <header class="bg-primary-navy fixed top-0 left-0 right-0 z-50 shadow-lg transition-all duration-300" id="header">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                  <a href="/index.html" class="flex flex-col group">
+                    <span class="font-display text-3xl font-extrabold text-white leading-none group-hover:text-accent-orange transition-colors duration-300">UNISGU</span>
+                    <span class="text-xs text-accent-orange font-medium -mt-1 opacity-90">Tansan Open Source University</span>
+                  </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                  <ul class="flex items-center space-x-8">
+                    <li><a href="/index.html" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Beranda</a></li>
+                    <li><a href="/services.html" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Layanan</a></li>
+                    <li><a href="/membership.html" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Membership</a></li>
+                    <li><a href="/index.html#about" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Tentang</a></li>
+                    <li><a href="/index.html#ecosystem" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Ekosistem</a></li>
+                    <li><a href="/index.html#contact" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Kontak</a></li>
+                  </ul>
+                  <a href="/login.html" class="cta-button bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Login / Dashboard</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                  <button id="mobileToggle" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-accent-orange focus:outline-none">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" id="menu-open-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg class="h-6 w-6 hidden" id="menu-close-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="navMenu" class="md:hidden hidden bg-primary-navy/95 backdrop-blur-sm border-t border-slate-700">
+              <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="/index.html" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beranda</a></li>
+                <li><a href="/services.html" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Layanan</a></li>
+                <li><a href="/membership.html" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Membership</a></li>
+                <li><a href="/index.html#about" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tentang</a></li>
+                <li><a href="/index.html#ecosystem" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ekosistem</a></li>
+                <li><a href="/index.html#contact" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Kontak</a></li>
+              </ul>
+              <div class="p-4">
+                <a href="/login.html" class="cta-button w-full text-center bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Login / Dashboard</a>
+              </div>
+            </div>
+        </header>
+
+        <main class="pt-20">
+            <!-- Hero Section for Services -->
+            <section id="services-hero" class="relative py-32 flex items-center justify-center text-white text-center bg-primary-navy">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary-navy via-slate-900 to-accent-teal/20 opacity-70 z-10"></div>
+                <div class="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h1 class="font-display text-4xl md:text-6xl font-extrabold mb-4">Layanan Profesional oleh Komunitas</h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-200">Dapatkan solusi ahli dari para kontributor UNISGU. Setiap proyek Anda mendukung ekosistem open source.</p>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section id="our-services" class="py-20 bg-slate-50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-800">Solusi Digital & Akademik</h2>
+                        <p class="text-lg text-slate-600 max-w-3xl mx-auto">Kami menyediakan berbagai layanan yang dikerjakan oleh talenta terbaik dari komunitas kami.</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Service Card 1: Web Development -->
+                        <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col">
+                            <div class="mb-4"><svg class="w-12 h-12 text-accent-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Pengembangan Website</h3>
+                            <p class="text-slate-600 mb-4 flex-grow">Pembuatan website profesional untuk bisnis, UMKM, institusi, dan lembaga dengan teknologi modern, cepat, dan aman.</p>
+                            <p class="text-lg font-bold text-accent-teal mb-4">Mulai dari Rp 3.000.000</p>
+                            <a href="#contact-services" class="font-semibold text-accent-orange hover:underline mt-auto">Diskusikan Proyek &rarr;</a>
+                        </div>
+
+                        <!-- Service Card 2: OJS Installation -->
+                        <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col">
+                            <div class="mb-4"><svg class="w-12 h-12 text-accent-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Instalasi Open Journal Systems (OJS)</h3>
+                            <p class="text-slate-600 mb-4 flex-grow">Layanan instalasi, konfigurasi, dan maintenance OJS untuk penerbitan jurnal ilmiah Anda secara profesional.</p>
+                            <p class="text-lg font-bold text-accent-teal mb-4">Mulai dari Rp 1.500.000</p>
+                            <a href="#contact-services" class="font-semibold text-accent-orange hover:underline mt-auto">Mulai Sekarang &rarr;</a>
+                        </div>
+                        
+                        <!-- Service Card 3: VPS & Server Management -->
+                        <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col">
+                            <div class="mb-4"><svg class="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path></svg></div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Manajemen Server & VPS</h3>
+                            <p class="text-slate-600 mb-4 flex-grow">Instalasi dan optimasi VPS, termasuk setup aaPanel, Nginx, dan konfigurasi keamanan untuk performa maksimal.</p>
+                            <p class="text-lg font-bold text-accent-teal mb-4">Mulai dari Rp 500.000 / bulan</p>
+                            <a href="#contact-services" class="font-semibold text-accent-orange hover:underline mt-auto">Optimalkan Server &rarr;</a>
+                        </div>
+
+                        <!-- Service Card 4: Scientific Publication -->
+                        <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col">
+                            <div class="mb-4"><svg class="w-12 h-12 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Pendampingan Publikasi Ilmiah</h3>
+                            <p class="text-slate-600 mb-4 flex-grow">Bantuan publikasi dari submit hingga terbit di SINTA (1-6) dan Scopus (Q2 & Q3), termasuk formatting dan proofreading.</p>
+                             <p class="text-lg font-bold text-accent-teal mb-4">Mulai dari Rp 4.000.000</p>
+                            <a href="#contact-services" class="font-semibold text-accent-orange hover:underline mt-auto">Publikasikan Karya &rarr;</a>
+                        </div>
+                        
+                        <!-- Service Card 5: Book Writing -->
+                        <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col">
+                            <div class="mb-4"><svg class="w-12 h-12 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg></div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Jasa Penulisan Buku</h3>
+                            <p class="text-slate-600 mb-4 flex-grow">Kami membantu penulisan dan penerbitan buku ajar, buku referensi, dan monograf, lengkap dengan ISBN dan desain cover.</p>
+                            <p class="text-lg font-bold text-accent-teal mb-4">Mulai dari Rp 7.000.000</p>
+                            <a href="#contact-services" class="font-semibold text-accent-orange hover:underline mt-auto">Wujudkan Buku Anda &rarr;</a>
+                        </div>
+
+                        <!-- Service Card 6: General Consultation -->
+                        <div class="service-card bg-white p-8 rounded-2xl shadow-lg border border-slate-200 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col">
+                            <div class="mb-4"><svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z"></path></svg></div>
+                            <h3 class="text-2xl font-bold mb-3 text-slate-800">Konsultasi Teknologi</h3>
+                            <p class="text-slate-600 mb-4 flex-grow">Butuh saran ahli untuk proyek digital Anda? Tim kami siap membantu Anda menemukan solusi teknologi yang tepat.</p>
+                            <p class="text-lg font-bold text-accent-teal mb-4">Mulai dari Rp 400.000 / jam</p>
+                            <a href="#contact-services" class="font-semibold text-accent-orange hover:underline mt-auto">Jadwalkan Sesi &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section for Services -->
+            <section id="contact-services" class="py-20 bg-white">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-800">Wujudkan Proyek Anda Bersama Kami</h2>
+                        <p class="text-lg text-slate-600 max-w-3xl mx-auto">Isi formulir di bawah ini untuk konsultasi gratis. Tim kami akan segera menghubungi Anda.</p>
+                    </div>
+                    <div class="max-w-4xl mx-auto bg-slate-50 p-8 sm:p-12 rounded-2xl shadow-lg">
+                        <form class="contact-form space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Nama Lengkap</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-slate-700 mb-2">Layanan yang Diminati</label>
+                                <select id="service" name="service" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors">
+                                    <option value="">Pilih Layanan</option>
+                                    <option value="web-dev">Pengembangan Website</option>
+                                    <option value="ojs">Instalasi OJS</option>
+                                    <option value="vps">Manajemen Server/VPS</option>
+                                    <option value="publication">Pendampingan Publikasi</option>
+                                    <option value="book-writing">Jasa Penulisan Buku</option>
+                                    <option value="consultation">Konsultasi Teknologi</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Deskripsi Singkat Proyek</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors resize-none" placeholder="Jelaskan kebutuhan Anda secara singkat..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+                                <span class="button-text">Kirim Permintaan Konsultasi</span>
+                                <div class="button-loading hidden">
+                                  <span class="loading-spinner"></span>
+                                </div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-primary-navy text-slate-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Footer Column 1 -->
+                <div class="space-y-4">
+                  <a href="/index.html" class="flex flex-col">
+                    <span class="font-display text-3xl font-extrabold text-white leading-none">UNISGU</span>
+                    <span class="text-xs text-accent-orange font-medium -mt-1">Tansan Open Source University</span>
+                  </a>
+                  <p class="text-slate-400 leading-relaxed">UNISGU: Membangun masa depan teknologi secara terbuka, satu kontribusi pada satu waktu.</p>
+                </div>
+                <!-- Footer Column 2 -->
+                <div>
+                  <h4 class="font-bold text-white text-lg mb-4">Navigasi Cepat</h4>
+                  <ul class="space-y-2">
+                    <li><a href="/index.html" class="hover:text-accent-orange transition-colors">Beranda</a></li>
+                    <li><a href="/services.html" class="hover:text-accent-orange transition-colors">Layanan</a></li>
+                    <li><a href="/membership.html" class="hover:text-accent-orange transition-colors">Membership</a></li>
+                    <li><a href="/index.html#contact" class="hover:text-accent-orange transition-colors">Kontak</a></li>
+                  </ul>
+                </div>
+                <!-- Footer Column 3 -->
+                <div>
+                  <h4 class="font-bold text-white text-lg mb-4">Komunitas</h4>
+                  <div class="space-y-2 text-slate-400">
+                    <p>Email: community@unisgu.ac.id</p>
+                    <p>Forum Diskusi</p>
+                    <p>Server Discord</p>
+                  </div>
+                </div>
+                <!-- Footer Column 4 -->
+                <div>
+                  <h4 class="font-bold text-white text-lg mb-4">Program</h4>
+                  <ul class="space-y-2 text-slate-400">
+                    <li>Program Kontributor</li>
+                    <li>Program Mentorship</li>
+                    <li>Proyek Unggulan</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-16 pt-8 border-t border-slate-700 text-center text-slate-400">
+                <p>&copy; 2025 UNISGU Open Source Community. Dirilis di bawah Lisensi MIT. | Privacy Policy | Code of Conduct</p>
+              </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

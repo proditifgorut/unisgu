@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - UNISGU</title>
+    <meta name="description" content="Dashboard UNISGU untuk mengelola pembelajaran, proyek, dan keanggotaan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-slate-50 font-sans">
+    <div class="flex h-screen bg-slate-50">
+        <!-- Sidebar -->
+        <aside class="w-64 flex-shrink-0 bg-primary-navy text-slate-300 flex flex-col">
+            <div class="h-20 flex items-center justify-center px-4 border-b border-slate-700">
+                <a href="/index.html" class="flex flex-col group">
+                    <span class="font-display text-3xl font-extrabold text-white leading-none">UNISGU</span>
+                    <span class="text-xs text-accent-orange font-medium -mt-1">Dashboard</span>
+                </a>
+            </div>
+            <nav class="flex-1 px-4 py-6 space-y-2">
+                <a href="/dashboard.html" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg bg-slate-700 text-white">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    Dashboard
+                </a>
+                <a href="/dashboard-learning-path.html" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg hover:bg-slate-700 hover:text-white transition-colors">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    Learning Path
+                </a>
+                <a href="/dashboard-projects.html" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg hover:bg-slate-700 hover:text-white transition-colors">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    Proyek Saya
+                </a>
+                <a href="/cart.html" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg hover:bg-slate-700 hover:text-white transition-colors">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    Keranjang
+                </a>
+            </nav>
+            <div class="px-4 py-6 border-t border-slate-700">
+                <a href="/login.html" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg hover:bg-slate-700 hover:text-white transition-colors">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <!-- Top bar -->
+            <header class="bg-white shadow-sm">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+                        <h1 class="text-2xl font-bold text-slate-800">Selamat Datang, Budi!</h1>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-sm font-medium text-slate-600">Paket: <span class="font-bold text-accent-orange">Premium Member</span></span>
+                            <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="User avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Page Content -->
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-slate-50">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                        <div class="bg-white p-6 rounded-xl shadow">
+                            <h3 class="text-sm font-medium text-slate-500">Learning Path Aktif</h3>
+                            <p class="text-2xl font-bold text-slate-800 mt-1">Fullstack Web Dev</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow">
+                            <h3 class="text-sm font-medium text-slate-500">Progres Belajar</h3>
+                            <p class="text-2xl font-bold text-slate-800 mt-1">45%</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow">
+                            <h3 class="text-sm font-medium text-slate-500">Proyek Dikerjakan</h3>
+                            <p class="text-2xl font-bold text-slate-800 mt-1">2</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow">
+                            <h3 class="text-sm font-medium text-slate-500">Kontribusi OSS</h3>
+                            <p class="text-2xl font-bold text-slate-800 mt-1">12</p>
+                        </div>
+                    </div>
+
+                    <!-- Main Dashboard Content -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- Left Column: Learning Progress -->
+                        <div class="lg:col-span-2 bg-white p-8 rounded-xl shadow">
+                            <h2 class="text-xl font-bold text-slate-800 mb-6">Lanjutkan Belajar</h2>
+                            <div class="space-y-6">
+                                <!-- Course Item -->
+                                <div class="flex items-center p-4 border border-slate-200 rounded-lg">
+                                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="font-bold text-slate-800">Modul 3: Backend dengan Node.js</h3>
+                                        <p class="text-sm text-slate-500">Fullstack Web Developer Path</p>
+                                        <div class="w-full bg-slate-200 rounded-full h-2.5 mt-2">
+                                            <div class="bg-accent-orange h-2.5 rounded-full" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <a href="/dashboard-learning-path.html" class="ml-4 px-4 py-2 bg-accent-orange text-white text-sm font-semibold rounded-lg hover:bg-orange-600 transition-colors">Lanjutkan</a>
+                                </div>
+                                <!-- Course Item -->
+                                <div class="flex items-center p-4 border border-slate-200 rounded-lg">
+                                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="font-bold text-slate-800">Dasar-dasar React Native</h3>
+                                        <p class="text-sm text-slate-500">Fullstack Mobile Developer Path</p>
+                                        <div class="w-full bg-slate-200 rounded-full h-2.5 mt-2">
+                                            <div class="bg-accent-teal h-2.5 rounded-full" style="width: 20%"></div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="ml-4 px-4 py-2 bg-accent-teal text-white text-sm font-semibold rounded-lg hover:bg-teal-600 transition-colors">Mulai</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Notifications & Projects -->
+                        <div class="space-y-8">
+                            <div class="bg-white p-6 rounded-xl shadow">
+                                <h2 class="text-xl font-bold text-slate-800 mb-4">Notifikasi</h2>
+                                <ul class="space-y-3">
+                                    <li class="text-sm text-slate-600"><span class="font-semibold text-accent-orange">Code Review:</span> Feedback baru di proyek Website UMKM.</li>
+                                    <li class="text-sm text-slate-600"><span class="font-semibold text-accent-teal">Mentoring:</span> Jadwal sesi dengan Anisa Rahman dikonfirmasi.</li>
+                                    <li class="text-sm text-slate-600"><span class="font-semibold text-blue-500">Komunitas:</span> Event "Kontribusi ke React" akan dimulai besok.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow">
+                                <h2 class="text-xl font-bold text-slate-800 mb-4">Proyek Aktif</h2>
+                                <ul class="space-y-3">
+                                    <li class="flex justify-between items-center text-sm">
+                                        <span class="text-slate-700">Website UMKM Kopi</span>
+                                        <span class="px-2 py-0.5 bg-yellow-100 text-yellow-800 rounded-full font-medium">In Progress</span>
+                                    </li>
+                                    <li class="flex justify-between items-center text-sm">
+                                        <span class="text-slate-700">Instalasi OJS Jurnal Ilmiah</span>
+                                        <span class="px-2 py-0.5 bg-green-100 text-green-800 rounded-full font-medium">Completed</span>
+                                    </li>
+                                </ul>
+                                <a href="/dashboard-projects.html" class="text-sm font-semibold text-accent-orange mt-4 block hover:underline">Lihat Semua Proyek &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

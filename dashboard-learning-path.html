@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Path - UNISGU</title>
+    <meta name="description" content="Materi pembelajaran Fullstack Web Developer di UNISGU." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-slate-50 font-sans">
+    <div class="flex h-screen bg-slate-50">
+        <!-- Sidebar -->
+        <aside class="w-64 flex-shrink-0 bg-primary-navy text-slate-300 flex flex-col">
+            <div class="h-20 flex items-center justify-center px-4 border-b border-slate-700">
+                <a href="/index.html" class="flex flex-col group">
+                    <span class="font-display text-3xl font-extrabold text-white leading-none">UNISGU</span>
+                    <span class="text-xs text-accent-orange font-medium -mt-1">Dashboard</span>
+                </a>
+            </div>
+            <nav class="flex-1 px-4 py-6 space-y-2">
+                <a href="/dashboard.html" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg hover:bg-slate-700 hover:text-white transition-colors">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    Dashboard
+                </a>
+                <a href="/dashboard-learning-path.html" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg bg-slate-700 text-white">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    Learning Path
+                </a>
+                <a href="/dashboard-projects.html" class="flex items-center px-4 py-2.5 text-sm font-medium rounded-lg hover:bg-slate-700 hover:text-white transition-colors">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    Proyek Saya
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex overflow-hidden">
+            <!-- Course Content -->
+            <main class="flex-1 overflow-y-auto">
+                <div class="p-8">
+                    <div class="mb-6">
+                        <a href="/dashboard.html" class="text-sm font-medium text-slate-600 hover:text-accent-orange">&larr; Kembali ke Dashboard</a>
+                        <h1 class="text-3xl font-bold text-slate-800 mt-2">Modul 3: Backend dengan Node.js</h1>
+                        <p class="text-slate-500">Bagian dari Fullstack Web Developer Path</p>
+                    </div>
+
+                    <div class="aspect-w-16 aspect-h-9 mb-8">
+                        <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/f2EqECiTBL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow">
+                        <h2 class="text-2xl font-bold text-slate-800 mb-4">Tentang Pelajaran Ini</h2>
+                        <div class="prose max-w-none text-slate-700">
+                            <p>Selamat datang di modul backend! Di pelajaran ini, kita akan memulai perjalanan kita dengan Node.js, sebuah runtime JavaScript yang memungkinkan kita menjalankan JavaScript di sisi server. Kita akan membahas:</p>
+                            <ul>
+                                <li>Apa itu Node.js dan mengapa ia populer.</li>
+                                <li>Setup environment Node.js di komputer Anda.</li>
+                                <li>Membuat server HTTP pertama Anda.</li>
+                                <li>Memahami konsep dasar asynchronous di Node.js.</li>
+                            </ul>
+                            <p>Pastikan untuk menginstal Node.js versi LTS terbaru sebelum melanjutkan. Anda dapat mengunduhnya dari <a href="https://nodejs.org/" target="_blank" class="text-accent-orange hover:underline">situs resmi Node.js</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Course Sidebar -->
+            <aside class="w-80 flex-shrink-0 bg-white border-l border-slate-200 overflow-y-auto">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-slate-800 mb-4">Materi Pembelajaran</h3>
+                    <div class="space-y-2">
+                        <!-- Module -->
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Modul 1: Frontend Dasar</h4>
+                            <ul class="space-y-1 pl-4 border-l-2 border-slate-200">
+                                <li class="text-sm text-slate-600 flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>HTML & CSS Lanjutan</li>
+                                <li class="text-sm text-slate-600 flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>JavaScript Modern (ES6+)</li>
+                            </ul>
+                        </div>
+                        <!-- Module -->
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Modul 2: React.js</h4>
+                            <ul class="space-y-1 pl-4 border-l-2 border-slate-200">
+                                <li class="text-sm text-slate-600 flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Komponen & Props</li>
+                                <li class="text-sm text-slate-600 flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>State & Lifecycle</li>
+                            </ul>
+                        </div>
+                        <!-- Current Module -->
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Modul 3: Backend dengan Node.js</h4>
+                            <ul class="space-y-1 pl-4 border-l-2 border-accent-orange">
+                                <li class="text-sm font-semibold text-accent-orange flex items-center"><svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M15.545 10.222a2.5 2.5 0 11-4.69 1.432A8.023 8.023 0 004.5 8.586V10a.5.5 0 01-1 0V4.5a.5.5 0 01.5-.5h5.5a.5.5 0 010 1H6.086a6.523 6.523 0 017.436-4.26A6.5 6.5 0 0118 8.5a6.5 6.5 0 01-2.455 4.926.5.5 0 01-.707-.707A5.5 5.5 0 0017 8.5a5.5 5.5 0 00-1.545-3.818A5.523 5.523 0 009.914 3.5H10a.5.5 0 010-1h-.086a1.5 1.5 0 01-1.414-.914.5.5 0 11.894-.448A2.5 2.5 0 0111.914 3H12a.5.5 0 010 1h-.086a1.5 1.5 0 01-1.4 1.086.5.5 0 11-.2-1A2.5 2.5 0 0112.5 2h.5a.5.5 0 010 1h-.5a1.5 1.5 0 00-1.414.914.5.5 0 11-.894.448A2.5 2.5 0 017.586 3H7a.5.5 0 010-1h.586a1.5 1.5 0 001.414-.914.5.5 0 11.894.448A2.5 2.5 0 0112.5 1h.5a.5.5 0 010 1h-.5a1.5 1.5 0 00-1.4 1.086.5.5 0 11-.988-.172A2.5 2.5 0 0112.5 0h.5a.5.5 0 010 1z"/></svg>Pengenalan Node.js</li>
+                                <li class="text-sm text-slate-500 flex items-center"><svg class="w-4 h-4 text-slate-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 10a2 2 0 114 0 2 2 0 01-4 0z" clip-rule="evenodd"></path></svg>Express.js</li>
+                                <li class="text-sm text-slate-500 flex items-center"><svg class="w-4 h-4 text-slate-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 10a2 2 0 114 0 2 2 0 01-4 0z" clip-rule="evenodd"></path></svg>REST API</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

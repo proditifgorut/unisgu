@@ -2,6 +2,14 @@
 export default {
   content: [
     "./index.html",
+    "./services.html",
+    "./membership.html",
+    "./login.html",
+    "./dashboard.html",
+    "./dashboard-learning-path.html",
+    "./dashboard-projects.html",
+    "./cart.html",
+    "./checkout.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./main.js",
   ],
@@ -17,6 +25,9 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         display: ['Poppins', 'sans-serif'],
+      },
+      aspectRatio: {
+        '16/9': '16 / 9',
       },
       keyframes: {
         fadeInUp: {

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - UNISGU</title>
+    <meta name="description" content="Masuk ke dashboard UNISGU untuk mengakses materi pembelajaran, proyek, dan komunitas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-slate-50 font-sans">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="w-full max-w-md p-8 space-y-8 bg-white rounded-2xl shadow-xl">
+            <div class="text-center">
+                <a href="/index.html" class="flex flex-col group w-fit mx-auto">
+                    <span class="font-display text-4xl font-extrabold text-primary-navy leading-none group-hover:text-accent-orange transition-colors duration-300">UNISGU</span>
+                    <span class="text-sm text-accent-orange font-medium -mt-1 opacity-90">Tansan Open Source University</span>
+                </a>
+                <h2 class="mt-6 text-2xl font-bold text-slate-800">Masuk ke Akun Anda</h2>
+                <p class="mt-2 text-sm text-slate-600">
+                    Atau <a href="/index.html#admission" class="font-medium text-accent-orange hover:underline">daftar sebagai kontributor baru</a>
+                </p>
+            </div>
+            <form class="mt-8 space-y-6" action="/dashboard.html" method="POST">
+                <div class="space-y-4">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Alamat Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors" placeholder="nama@email.com">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-slate-700 mb-2">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-orange focus:border-transparent transition-colors" placeholder="••••••••">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-accent-orange focus:ring-accent-orange border-slate-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-slate-800">Ingat saya</label>
+                    </div>
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-accent-orange hover:underline">Lupa password?</a>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+                        Masuk
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
