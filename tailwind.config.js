@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./services.html",
     "./membership.html",
+    "./free-learning.html",
     "./login.html",
     "./dashboard.html",
     "./dashboard-learning-path.html",

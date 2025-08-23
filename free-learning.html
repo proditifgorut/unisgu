@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Gratis - UNISGU</title>
+    <meta name="description" content="Akses kurikulum gratis untuk menjadi Fullstack Web dan Mobile Developer, dikurasi oleh komunitas UNISGU dari sumber terbaik di internet." />
+    <meta name="author" content="UNISGU Open Source Community" />
+    <meta property="og:title" content="Pusat Pembelajaran Gratis - UNISGU" />
+    <meta property="og:description" content="Ratusan jam materi berkualitas tinggi untuk memulai karir Anda di dunia teknologi, dipersembahkan oleh komunitas UNISGU." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+    <div id="app">
+        <!-- Header -->
+        <header class="bg-primary-navy fixed top-0 left-0 right-0 z-50 shadow-lg transition-all duration-300" id="header">
+            <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                  <a href="/index.html" class="flex flex-col group">
+                    <span class="font-display text-3xl font-extrabold text-white leading-none group-hover:text-accent-orange transition-colors duration-300">UNISGU</span>
+                    <span class="text-xs text-accent-orange font-medium -mt-1 opacity-90">Tansan Open Source University</span>
+                  </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                  <ul class="flex items-center space-x-8">
+                    <li><a href="/index.html" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Beranda</a></li>
+                    <li><a href="/free-learning.html" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Belajar Gratis</a></li>
+                    <li><a href="/services.html" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Layanan</a></li>
+                    <li><a href="/membership.html" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Membership</a></li>
+                    <li><a href="/index.html#contact" class="nav-link text-slate-200 font-medium hover:text-accent-orange transition duration-300 relative py-2">Kontak</a></li>
+                  </ul>
+                  <a href="/login.html" class="cta-button bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Login / Dashboard</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                  <button id="mobileToggle" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-accent-orange focus:outline-none">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" id="menu-open-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg class="h-6 w-6 hidden" id="menu-close-icon" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="navMenu" class="md:hidden hidden bg-primary-navy/95 backdrop-blur-sm border-t border-slate-700">
+              <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="/index.html" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Beranda</a></li>
+                <li><a href="/free-learning.html" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Belajar Gratis</a></li>
+                <li><a href="/services.html" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Layanan</a></li>
+                <li><a href="/membership.html" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Membership</a></li>
+                <li><a href="/index.html#contact" class="nav-link text-slate-200 hover:bg-slate-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Kontak</a></li>
+              </ul>
+              <div class="p-4">
+                <a href="/login.html" class="cta-button w-full text-center bg-gradient-to-r from-accent-orange to-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">Login / Dashboard</a>
+              </div>
+            </div>
+        </header>
+
+        <main class="pt-20">
+            <!-- Hero Section for Free Learning -->
+            <section id="free-learning-hero" class="relative py-32 flex items-center justify-center text-white text-center bg-primary-navy">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary-navy via-slate-900 to-accent-teal/20 opacity-70 z-10"></div>
+                <div class="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8">
+                    <h1 class="font-display text-4xl md:text-6xl font-extrabold mb-4">Pusat Pembelajaran Gratis UNISGU</h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-200">Akses ratusan jam materi berkualitas tinggi untuk memulai perjalanan Anda di dunia teknologi, dipersembahkan oleh komunitas.</p>
+                </div>
+            </section>
+
+            <!-- Learning Paths Section -->
+            <section id="learning-content" class="py-20">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <!-- Fullstack Web Developer Path -->
+                    <div class="mb-20">
+                        <div class="mb-12">
+                            <h2 class="text-4xl font-bold text-slate-800">Jalur Fullstack Web Developer</h2>
+                            <p class="text-lg text-slate-600 mt-2">Dari dasar HTML hingga mendeploy aplikasi web fullstack yang kompleks.</p>
+                        </div>
+
+                        <!-- Module: HTML & CSS -->
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-accent-orange">Modul 1: Fondasi Web - HTML & CSS</h3>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/kUMe1FH4CHE" title="HTML Crash Course" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">HTML Crash Course</h4>
+                                        <p class="text-sm text-slate-600">Oleh: Traversy Media</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/yfoY53QXEnI" title="CSS Crash Course" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">CSS Crash Course</h4>
+                                        <p class="text-sm text-slate-600">Oleh: Traversy Media</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/3_3D0zO2v2U" title="Learn Flexbox" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">Learn Flexbox in 15 Minutes</h4>
+                                        <p class="text-sm text-slate-600">Oleh: Web Dev Simplified</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module: JavaScript -->
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-accent-orange">Modul 2: JavaScript Modern</h3>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="JavaScript Full Course" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">JavaScript Full Course</h4>
+                                        <p class="text-sm text-slate-600">Oleh: freeCodeCamp.org</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/v46aF1f4o_c" title="Asynchronous JavaScript" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">Asynchronous JavaScript</h4>
+                                        <p class="text-sm text-slate-600">Oleh: The Net Ninja</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/5fb2aPlgoys" title="DOM Manipulation" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">JavaScript DOM Manipulation</h4>
+                                        <p class="text-sm text-slate-600">Oleh: Traversy Media</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <!-- Module: React.js -->
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-accent-orange">Modul 3: Frontend dengan React.js</h3>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/bMknfKXIFA8" title="React Full Course" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">React Full Course 2024</h4>
+                                        <p class="text-sm text-slate-600">Oleh: freeCodeCamp.org</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module: Node.js -->
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-accent-orange">Modul 4: Backend dengan Node.js & Express</h3>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/f2EqECiTBL8" title="Node.js & Express Course" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">Node.js & Express.js Full Course</h4>
+                                        <p class="text-sm text-slate-600">Oleh: freeCodeCamp.org</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fullstack Mobile Developer Path -->
+                    <div>
+                        <div class="mb-12">
+                            <h2 class="text-4xl font-bold text-slate-800">Jalur Fullstack Mobile Developer</h2>
+                            <p class="text-lg text-slate-600 mt-2">Bangun aplikasi untuk iOS dan Android dari satu basis kode.</p>
+                        </div>
+
+                        <!-- Module: React Native -->
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-accent-teal">Modul 1: Dasar-dasar React Native</h3>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/obH0Po_RdWk" title="React Native Crash Course" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">React Native Crash Course</h4>
+                                        <p class="text-sm text-slate-600">Oleh: Traversy Media</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/0-S5a0eXPoc" title="React Native Full Course" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">React Native Full Course</h4>
+                                        <p class="text-sm text-slate-600">Oleh: freeCodeCamp.org</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Module: Firebase -->
+                        <div class="mb-10">
+                            <h3 class="text-2xl font-bold mb-6 pb-2 border-b-2 border-accent-teal">Modul 2: Backend dengan Firebase</h3>
+                            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                                    <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/fgdpvw0a_M8" title="Firebase Full Course" frameborder="0" allowfullscreen></iframe>
+                                    <div class="p-4">
+                                        <h4 class="font-bold">Firebase Full Course</h4>
+                                        <p class="text-sm text-slate-600">Oleh: freeCodeCamp.org</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-primary-navy text-slate-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="space-y-4">
+                        <a href="/index.html" class="flex flex-col">
+                            <span class="font-display text-3xl font-extrabold text-white leading-none">UNISGU</span>
+                            <span class="text-xs text-accent-orange font-medium -mt-1">Tansan Open Source University</span>
+                        </a>
+                        <p class="text-slate-400 leading-relaxed">Membangun masa depan teknologi secara terbuka.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg mb-4">Navigasi</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/index.html" class="hover:text-accent-orange transition-colors">Beranda</a></li>
+                            <li><a href="/free-learning.html" class="hover:text-accent-orange transition-colors">Belajar Gratis</a></li>
+                            <li><a href="/services.html" class="hover:text-accent-orange transition-colors">Layanan</a></li>
+                            <li><a href="/membership.html" class="hover:text-accent-orange transition-colors">Membership</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg mb-4">Komunitas</h4>
+                        <div class="space-y-2 text-slate-400">
+                            <p>Email: community@unisgu.ac.id</p>
+                            <p>GitHub: github.com/unisgu</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg mb-4">Program</h4>
+                        <ul class="space-y-2 text-slate-400">
+                            <li>Program Kontributor (Gratis)</li>
+                            <li>Program Mentorship (Premium)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-16 pt-8 border-t border-slate-700 text-center text-slate-400">
+                    <p>&copy; 2025 UNISGU Open Source Community. Dirilis di bawah Lisensi MIT.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
